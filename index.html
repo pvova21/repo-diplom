@@ -8,14 +8,82 @@
     <link rel="stylesheet" href="css/style.css">
  </head>
    <body>
+        <div class="popup_hidden">
+        <div class="popup-container">
+           <div class="fidbek">
+              <div class="fidbek-header">
+                <h3 class="fidbek-title">Ваш фидбек</h3>
+              </div>
+              <label class="fidbek-column"> 
+                 <span class="fidbek-column__label" for="username">Как часто вы заходите на сайт?</span>
+                 <select class="fidbek-column-select">
+                    <option value="day" selected>Почти каждый день</option>
+                    <option value="week">Почти каждую неделю</option>
+                    <option value="month">Почти каждый месяц</option>
+                 </select> 
+              </label>
+              <div class="request">
+                <span class="checkbox-texts">Вы подписаны на e-mail рассылку?</span>
+                <span class="checkbox-group">
+                  <input class="checkbox-radio" id="radio_1" name="radio" type="radio" value="1">
+                  <label class="checkbox-text" for="radio_1">Да</label>
+                  <input class="checkbox-radio" id="radio_2" name="radio" type="radio" value="2">
+                  <label class="checkbox-text" for="radio_2">Нет</label>
+                </span>
+              </div>
+              <div class="fidbek-column-row">
+                <label class="fidbek-column__label-row" for="username">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</label>
+                <input id="username" class="fidbek-column__field-row" placeholder="Может, больше рецептов?" name="username" required> 
+              </div>
+              <div class="fidbek-button">
+                <button class="fidbek-product__button">Отправить</button>
+              </div>
+           </div>
+           <span class="popup__close"></span>
+         </div>
+        </div>
        <header class="header">
-            <div class="trends">
+          <div class="header_wrap">
+            <div class="menu">
+              <a href="#0" class="logo_link">
+                <img src="../repo-diplom/svg/noemi-logo.svg" class="header_logo" alt="логотип">
+              </a>
+               <div class="container-burger">
+                   <nav class="nav-js-menu js-menu_active">
+                     <button class="burger-js-menu">
+                       <span class="burger-menu">меню</span> 
+                     </button>
+                      <ul class="nav_list menu__list">
+                        <li class="nav_list_item">
+                                  <a href="#0" class="nav_link">главная</a>
+                        </li>
+                        <li class="nav_list_item">
+                                  <a href="#0" class="nav_link">посты</a>
+                        </li>
+                        <li class="nav_list_item">
+                                  <a href="#0" class="nav_link">статьи</a>
+                        </li>
+                        <li class="nav_list_item">
+                                  <a href="#0" class="nav_link">теги</a>
+                        </li>
+                        <li class="nav_list_item">
+                                  <a href="#0" class="nav_link">темы</a>
+                        </li>
+                        <li class="nav_list_item">
+                                  <a href="#0" class="nav_link">контакты</a>
+                        </li>
+                      </ul>
+                    </nav>
+               </div>        
+            </div>
+            <h1 class="header_title">Блог о творчестве, спорте, и образе жизни</h1>
+          </div>
+        </header>
+        <section class="trends">
+          <div class="container-trends">
             <h3  class="trend-top">Сейчас в тренде</h3>
-            <section class="trend">
-              <article class="trend1">
-              <div class="trend-box">
-                <img class="trend-img"src="../repo-diplom/img/trend1.jpg" alt="рассада">
-              </div>          
+            <div class="trend">
+              <article class="item trend1">
                 <div class="trend-text"> 
                   <ul class="trend-teg">
                   <li class="trend-teg-item">
@@ -30,45 +98,36 @@
                   </h2>
                 </div>
               </article>
-              <article class="trend2">
-              <div class="trend-box">
-                <img class="trend-img"src="../repo-diplom/img/trend2.jpg" alt="сыры">
-              </div>
-          <div class="trend-text">
-            <ul class="trend-teg">
-              <li class="trend-teg-item">
-                <a class="trend-teg-link" href="#0">food</a>
-              </li>
-            </ul>
+              <article class="item trend2">
+                <div class="trend-text">
+                  <ul class="trend-teg">
+                    <li class="trend-teg-item">
+                      <a class="trend-teg-link" href="#0">food</a>
+                    </li>
+                  </ul>
 
-              <h2 class="trend-name">
-                <a class="trend-link" href="#0">сыры на красивых  картинках из интернета: какие они на вкус?</a>
-              </h2>
-          </div>
+                    <h2 class="trend-name">
+                      <a class="trend-link" href="#0">сыры на красивых  картинках из интернета: какие они на вкус?</a>
+                    </h2>
+                </div>
               </article>
-              <article class="trend3">
-              <div class="trend-box">
-                <img class="trend-img"src="../repo-diplom/img/trend3.jpg" alt="турист">
-              </div>
-          <div class="trend-text">
-            <ul class="trend-teg">
-              <li class="trend-teg-item">
-                <a class="trend-teg-link" href="#0">lifestyle</a>
-              </li>
-              <li class="trend-teg-item">
-                <a class="trend-teg-link" href="#0">travel</a>
-              </li>
-            </ul>
+              <article class="item trend3">
+                <div class="trend-text">
+                        <ul class="trend-teg">
+                          <li class="trend-teg-item">
+                            <a class="trend-teg-link" href="#0">lifestyle</a>
+                          </li>
+                          <li class="trend-teg-item">
+                            <a class="trend-teg-link" href="#0">travel</a>
+                          </li>
+                        </ul>
 
-              <h2 class="trend-name">
-                <a class="trend-link" href="#0">собираемся в первый поход в горы</a>
-              </h2>
-          </div>
+                          <h2 class="trend-name">
+                            <a class="trend-link" href="#0">собираемся в первый поход в горы</a>
+                          </h2>
+                </div>
               </article>
-              <article class="trend4">
-              <div class="trend-box">
-                <img class="trend-img"src="../repo-diplom/img/trend4.jpg" alt="лимоны">
-              </div>
+              <article class="item trend4">
           <div class="trend-text">
             <ul class="trend-teg">
               <li class="trend-teg-item">
@@ -84,40 +143,10 @@
               </h2>
           </div>
               </article>
-            </section>
-          </div>
-          <div class="header_wrap">
-            <div class="menu">
-              <a href="#0" class="logo_link">
-                <img src="../repo-diplom/svg/noemi-logo.svg" class="header_logo" alt="логотип">
-              </a>
-              <nav class="nav">
-                <ul class="nav_list">
-                  <li class="nav_list_item">
-                    <a href="#0" class="nav_link">главная</a>
-                  </li>
-                  <li class="nav_list_item">
-                    <a href="#0" class="nav_link">посты</a>
-                  </li>
-                  <li class="nav_list_item">
-                    <a href="#0" class="nav_link">статьи</a>
-                  </li>
-                  <li class="nav_list_item">
-                    <a href="#0" class="nav_link">теги</a>
-                  </li>
-                  <li class="nav_list_item">
-                    <a href="#0" class="nav_link">темы</a>
-                  </li>
-                  <li class="nav_list_item">
-                    <a href="#0" class="nav_link">контакты</a>
-                  </li>
-                </ul>
-              </nav>
             </div>
-            <h1 class="header_title">Блог о творчестве, спорте, и образе жизни</h1>
           </div>
-        </header>
-           <div class="container">
+        </section>
+        <div class="container">
               <main class="main">
                 <article class="post_card">
                           <div class="post_img">
@@ -422,8 +451,8 @@
                           </nav>
                         </section>
                 </aside>
-          </div>
-            <section class="products">
+        </div>
+        <section class="products">
                 <div class="shop">
                   <h3  class="product-top">Наши изделия</h3>
                   <div class="shop-item">
@@ -488,8 +517,8 @@
                     </article>
                   </div>
                 </div>
-            </section>
-            <footer class="footer">
+        </section>
+        <footer class="footer">
               <div class="footer-wrapper">
               <ul class="social_list">
                 <li class="social_list_item">
@@ -523,6 +552,6 @@
               <p> <a class="copy_link" href="#0">Copyright © 2009–2019 City Blog LLC. </a>
               </p>
                 </div>
-            </footer> 
+        </footer>
    </body>
 </html>
