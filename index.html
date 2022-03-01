@@ -9,7 +9,7 @@
  </head>
    <body>
         <div class="popup_hidden">
-        <div class="popup-container">
+         <div class="popup-container">
            <div class="fidbek">
               <div class="fidbek-header">
                 <h3 class="fidbek-title">Ваш фидбек</h3>
@@ -33,13 +33,15 @@
               </div>
               <div class="fidbek-column-row">
                 <label class="fidbek-column__label-row" for="username">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</label>
-                <input id="username" class="fidbek-column__field-row" placeholder="Может, больше рецептов?" name="username" required> 
+                <textarea id="username" class="fidbek-column__field-row" placeholder="Может, больше рецептов?" name="username" required></textarea> 
               </div>
               <div class="fidbek-button">
                 <button class="fidbek-product__button">Отправить</button>
               </div>
            </div>
-           <span class="popup__close"></span>
+           <button class="popup__close-button">
+             <span class="popup__close"></span>
+           </button>
          </div>
         </div>
        <header class="header">
@@ -133,7 +135,7 @@
               <li class="trend-teg-item">
                 <a class="trend-teg-link" href="#0">food</a>
               </li>
-              <li class="trend-teg-item">
+              <li class="trend-teg-item last">
                 <a class="trend-teg-link" href="#0">health</a>
               </li>
             </ul>
@@ -458,7 +460,18 @@
                   <div class="shop-item">
                     <article class="product">
                       <div class="product__imgbox">
-                        <img class="product__img" src="../repo-diplom/img/shop-item-desk1.jpg" alt="Подушка">
+                        <picture class="product__imgbox-img">
+                          <source
+                            media="(max-width: 360px)"
+                            srcset="../repo-diplom/img/shop-item-mobile1.jpg">
+                          <source
+                            media="(max-width: 768px)"
+                            srcset="../repo-diplom/img/shop-item-tablet1.jpg">
+                          <source 
+                            media="(min-width: 1200px)"
+                            srcset="../repo-diplom/img/shop-item-desk1.jpg">
+                         <img class="product__img" src="../repo-diplom/img/shop-item-desk1.jpg" alt="Подушка">
+                        </picture>
                       </div>
                       <div class="product__body">
                         <div class="product__content">
@@ -477,8 +490,19 @@
                       </div>
                     </article>
                     <article class="product">
-                      <div class="product__imgbox">
-                        <img class="product__img" src="../repo-diplom/img/shop-item-desk2.jpg" alt="кукла">
+                       <div class="product__imgbox">
+                         <picture class="product__imgbox-img">
+                           <source
+                            media="(max-width: 360px)"
+                            srcset="../repo-diplom/img/shop-item-mobile2.jpg">
+                           <source
+                            media="(max-width: 768px)"
+                            srcset="../repo-diplom/img/shop-item-tablet2.jpg">
+                           <source 
+                            media="(min-width: 1200px)"
+                            srcset="../repo-diplom/img/shop-item-desk2.jpg">
+                           <img class="product__img" src="../repo-diplom/img/shop-item-desk2.jpg" alt="кукла">
+                          </picture>
                       </div>
                       <div class="product__body">
                         <div class="product__content">
@@ -497,7 +521,18 @@
                     </article>
                     <article class="product">
                       <div class="product__imgbox">
-                        <img class="product__img" src="../repo-diplom/img/shop-item-desk3.jpg" alt="рамка">
+                        <picture class="product__imgbox-img">
+                          <source
+                           media="(max-width: 360px)"
+                           srcset="../repo-diplom/img/shop-item-mobile3.jpg">
+                          <source
+                           media="(max-width: 768px)"
+                           srcset="../repo-diplom/img/shop-item-tablet3.jpg">
+                          <source 
+                           media="(min-width: 1200px)"
+                           srcset="../repo-diplom/img/shop-item-desk3.jpg">
+                         <img class="product__img" src="../repo-diplom/img/shop-item-desk3.jpg" alt="рамка">
+                        </picture>
                       </div>
                       <div class="product__body">
                         <div class="product__content">
