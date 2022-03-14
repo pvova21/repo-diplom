@@ -105,6 +105,7 @@
    .header_wrap {
     max-width: 1200px;
     margin: auto;
+    padding: 0 15px 0;
    }
    .header_logo {
     width: 180px;
@@ -259,7 +260,7 @@
      display: flex;
      position: relative;
      min-height: 320px;
-     padding: 0 20px 15px 20px;
+     padding: 15px 20px 15px 20px;
      flex: 0 1 25%;
      margin-right: 4px;
      background-position: center center;
@@ -391,13 +392,13 @@
      justify-content: space-between;
      max-width: 1200px;
      margin: auto;
-     padding: 64px 0 15px;
+     padding: 64px 15px 15px;
      
    }
    .main {
      
      width: 70vw;
-     margin: 0 5px 0;
+     max-width: 778px;
     
    }
    
@@ -504,7 +505,7 @@
    
    .section_title {
      position: relative;
-     margin: 30px 20px 30px;
+     margin: 30px 0 30px;
      
      font-family: OpenSans-Bold, sans-serif;
      font-size: 14px;
@@ -529,7 +530,7 @@
     display: flex;
     flex-grow: 1;
     margin: auto;
-    width: 1200px;
+    max-width: 1200px;
    }
 
    .shop {
@@ -617,7 +618,7 @@
  }
  .product__description a {
   text-decoration: none;
-  text-transform: uppercase;
+  text-transform: inherit;
   font-weight: 600;
   font-size: 14px;
   color: #b59f5b;
@@ -658,7 +659,7 @@
      font-weight: bold;
      font-size: 14px;
      text-transform: uppercase;
-     line-height: 1; 
+     line-height: 1.2; 
    }
    
    .last_post_title_link {
@@ -670,20 +671,20 @@
      color: #b59f5b;
    }
    
-   .form_side_bar {
-     position: relative;
-     width: 100%;
-     font-family: OpenSans, sans-serif;
-     margin-bottom: 40px;
-   }
+ .form_side_bar {
+   position: relative;
+   width: 100%;
+   font-family: OpenSans, sans-serif;
+   margin-bottom: 40px;
+  }
    
    .form_field {
      -webkit-appearance: none;
      -moz-appearance: none;
      height: 50px;
-     max-width: 220px;
+     
      padding: 18px;
-     width: 90vw;
+     width: calc(100% - 50px);
      font-weight: normal;
      font-size: 13px;
      color: #000000;
@@ -691,7 +692,7 @@
      
      border: none;
      background-color: #f4f7f6;
-   }
+    }
    .mail_field {
      -webkit-appearance: none;
      -moz-appearance: none;
@@ -836,7 +837,7 @@
 
 
    .footer {
-     width: 100vw;
+     
      max-width: 1200px;
      margin: auto;
      padding-left: 15px;
@@ -1029,6 +1030,9 @@
       margin: 0 0 5vw;
       padding: 0 0 5vw;
     }
+    .side_bar {
+      width: 420px;
+    }
     .trend {
       display: flex;
       flex-wrap: wrap;
@@ -1086,7 +1090,7 @@
       width: 100%;
       }
     .side_bar {
-      width: 100vw;
+      width: 420px;
     }
     .post_content {
       display: flex;
